@@ -25,11 +25,11 @@ const contaAsHoras = setInterval(function() {
     console.log(minutosAteOEvento);
     console.log(segundosAteOEvento);
 
-    document.getElementById('contador').innerHTML = `${diasAteOEvento}d ${horasAteOEvento}h ${minutosAteOEvento}m ${segundosAteOEvento}s`;
+    document.getElementById('contador').innerHTML = `começa em ${diasAteOEvento}d ${horasAteOEvento}h ${minutosAteOEvento}m ${segundosAteOEvento}s`;
 
     if (distanciaDoEvento < 0) {
         clearInterval(contaAsHoras);
-        document.getElementById('contador').innerHTML = 'Evento expirado';
+        document.getElementById('contador').innerHTML = 'ja expirou';
     }
 
 }, 1000);
